@@ -2,20 +2,20 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
+
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Experience', href: '#' },
+  { name: 'Project', href: '#' },
+  { name: 'Contact me', href: '#' },
 ]
 
 export default function Heropage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-white">
-      <header className="absolute inset-x-0 top-0 z-50 f">
-        <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <div className="">
+      <header className=" top-0 left-0 right-0 inset-x-0 top-0 z-50 f">
+        {/* <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
@@ -48,13 +48,12 @@ export default function Heropage() {
               Log in <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
-        </nav>
+        </nav> */}
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-          <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-            <div className="flex items-center justify-between">
+          <div className="inset-0 z-50" />
+          <Dialog.Panel className="inset-y-0 right-0 z-50 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div className="flex items-left justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
                 <img
                   className="h-8 w-auto"
                   src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
@@ -83,23 +82,15 @@ export default function Heropage() {
                     </a>
                   ))}
                 </div>
-                <div className="py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Log in
-                  </a>
-                </div>
               </div>
             </div>
           </Dialog.Panel>
         </Dialog>
       </header>
 
-      <div className="relative isolate px-6 pt-14 lg:px-8 flex justify-start">
+      <div className=" isolate px-6 pt-14 lg:px-8 flex justify-start ">
         <div
-          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          className=" inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
         >
           {/* <div
@@ -121,10 +112,10 @@ export default function Heropage() {
             </div>
           </div> */}
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-[#A3F0FF] sm:text-6xl">
             Hafsa Mire
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-slate-300">
             I am Hafsa Mire, an experienced front-end developer and UX designer passionate about creating engaging and intuitive user experiences. 
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">

@@ -5,17 +5,19 @@ import Experience from './components/Experience';
 import Navbar from './components/Navbar';
 import ProjectCards from './components/projectCards';
 import Contactme from './components/Contactme';
+import formcontact from '../src/'
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      {/* <Navbar/> */}
       
       
-      <div class="relative  column-2 sm:flex ">
-        <div className="fixed col-1 w-96 ">
+      <div class="">
+        <div  class="relative flex flex-col md:flex-row ">
+        <div className="sm:fixed  col-1">
          <Heropage />
-         <span className="inline-flex fixed bottom-0 left-20 right-0 text-center mb-16">
+         {/* <span className="inline-flex fixed lg:invisible bottom-0 left-20 right-0 text-center mb-16">
                       <a className="text-gray-500">
                         <svg
                           fill="currentColor"
@@ -73,15 +75,17 @@ function App() {
                           <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
                         </svg>
                       </a>
-                    </span>
+                    </span> */}
         </div>
-        <div className="ml-96 col-2 sm:py-48">
-          {/* <ProjectCards/>  */}
-        <Experience />
+        <div className="col-1 md:ml-64 overflow-auto scroll-smooth">
+       <div class="">
+       <Experience />
         <Contactme/>
+       </div>-
+      
         </div>
       </div>
-    
+      </div>
    
    
      

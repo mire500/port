@@ -14,9 +14,9 @@ function Contactme() {
                 
                   
                   <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                    <a className="text-[#8EFCE1]">hafsamire80@gmail.com</a>
-                    <p className="leading-normal my-5">
-                      49 Smith St.
+                    <a className="text-slate-200">hafsamire80@gmail.com</a>
+                    <p className="text-grey-200 leading-normal my-5">
+                      front-end Developer
                       <br />
                       London
                     </p>

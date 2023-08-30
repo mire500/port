@@ -2,6 +2,7 @@
 import {useState} from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import logo from '../Asset/hafsamire.png'
 
 
 
@@ -18,7 +19,7 @@ function Navbar() {
     <div className="flex lg:flex-1">
       <a href="#" className="-m-1.5 p-1.5">
         <span className="sr-only">Your Company</span>
-      
+      <img  class="w-20" src={logo}></img>
       </a>
     </div>
     <div className="flex lg:hidden">
@@ -33,7 +34,7 @@ function Navbar() {
     </div>
     <div className="hidden lg:flex lg:gap-x-12">
       {navigation.map((item) => (
-        <a key={item.name} href={item.href} className="text-sm font-semibold text-[#A3F0FF]">
+        <a key={item.name} href={item.href} className="text-sm  pr-6 font-semibold text-[#8EFCE1]">
           {item.name}
         </a>
       ))}
